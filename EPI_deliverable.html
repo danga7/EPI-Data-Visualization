@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="EPI_delieverable_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>EPI Index</title>
+</head>
+
+<body>
+
+    <!-- SECTION 1 -->
+    <div class="container-1" id="section1">
+        <div class="legends-container-1">
+            <div class = "title-container">
+                <img src="EPI_Logo_AI_Master_file.svg" alt="EPI logo">
+            <!-- <h3>
+                "<em>...which countries are best addressing the environmental challenges that every nation faces?</em>" 
+            </h3> -->
+                <h4>
+                    Thinking in Index.
+                </h4>
+            </div>
+                <p class="p1">
+                    Measuring how well countries are protecting their populations from environmental health risks, the Environmental Performance Index - EPI datasets are taken from <a href="https://epi.yale.edu/"><u>Yale University</u></a>.<br/><br/>
+                    The statistic includes 180 countries and their rankings on climate change performance and environmental health based on a combination of different indicators. The indexes presented in this data visualization page consists of:<br/><br/> <strong>Environmental Health</strong> - HLT<br/> <strong>Air Quality</strong> - AIR, <strong>Water & Sanitation</strong> - H2O, <strong>Heavy Metals</strong> - HMT, <strong>Waste Management</strong> - WMG.<br/> <br/> 
+                    Hover on the bubble bellow to find out their details.
+                </p>
+        </div>
+        <div class="content-container">
+            <div class="small-plot" id="svg1">
+            </div>
+            <div id="tooltip_node"></div>
+        </div>
+        <a href="#section2">&darr;</a>
+    </div>
+
+
+    <!-- SECTION 2 -->
+    <div class = "container-2-total" id="section2">
+        <a href="#section1">&uarr;</a>
+        <div class="container-2">
+            <div class="legends-container-2">
+                <h2>World Regions in motion.</h2> 
+                <p class="p2">
+                    Discover how all the country in the world look like base on their environmental index.<br/><br/> 
+                    With 8 regions presented, clear divisions can be seen at a first glance. But can you also spot some special ones that excess their region peers?<br/><br/>
+                </p>
+                <div class="regions">
+                </div>
+            </div>
+
+
+            <div class="chart">
+                <div class="buttons">
+                    <div class="buttons1"></div>
+                    <div class="buttons2"></div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=section-1.js></script> 
+    <script src=section-2.js></script>
+
+</body>
+
+</html>

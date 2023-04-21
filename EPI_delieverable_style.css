@@ -1,0 +1,266 @@
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------- TRANSITION BUTTONS -------- */
+.container-1 a {
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    justify-self: flex-end;
+    align-self: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.container-2-total a {
+    font-size: 20px;
+    color:rgb(24, 24, 24);
+    align-self: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+/* -------- SECTION 1 ELEMENTS -------- */
+
+.container-1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.legends-container-1{
+    height: 40%;
+    width: 80%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-container{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 55%;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-size: 40px;
+    font-weight: 400;
+    align-self: flex-start;
+    justify-content: center;
+}
+
+.p1{
+    max-width: 800px;
+    word-wrap: normal;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: justify;
+    text-align-last: left;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+img{
+    width: 60%;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.small-plot{
+    width: 70%;
+    height: 80%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#svg1{
+    overflow: visible;
+    align-self: center;
+}
+
+.links{
+    overflow: visible;
+}
+
+.nodes{
+    overflow: visible;
+}
+
+#tooltip_node{
+    margin: 10px;
+    width: 30%;
+    align-self: center;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+/* -------- SECTION 2 ELEMENTS -------- */
+
+.container-2-total{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+}
+
+.container-2{
+    height: 100%;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.legends-container-2 {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.p2{
+    max-width: 240px;
+    word-wrap: normal;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+text{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.regions {
+    width: 300px;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.myRegions {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    overflow: visible;
+}
+
+.chart{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.plot {
+    order: -1;
+    width: 80%;
+    height: 75%;
+    background-color: transparent;
+    overflow: visible;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.buttons{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.buttons1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.buttons2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 30px;
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: none;
+    background-color: rgba(103, 103, 103, 0.3);
+    color: rgb(255, 255, 255, 0.7);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255, 1);
+    ;
+    border-width: 0px;
+    color: #1d1d1d;
+}
+
+button:focus {
+    background-color: white;
+    border-width: 0px;
+    color: #1d1d1d;
+}
+
+#tooltip {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    color: #373737
+}

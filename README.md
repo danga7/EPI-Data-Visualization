@@ -1,4 +1,3 @@
 # EPI-Data-Visualization
-datasets parsed from https://epi.yale.edu/
-world regions and their Environmental Performance Index numbers
-a class project for Design & Data, Aalto University
+# datasets parsed from https://epi.yale.edu/
+World regions and their Environmental Performance Index numbers. A class project for Design & Data, Aalto University.
